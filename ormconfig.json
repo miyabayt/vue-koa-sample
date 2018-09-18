@@ -1,0 +1,19 @@
+{
+  "type": "mysql",
+  "charset": "utf8",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "passw0rd",
+  "database": "sample",
+  "synchronize": true,
+  "logging": ["query", "error"],
+  "entities": ["server/entities/**/*.ts"],
+  "migrations": ["server/migrations/**/*.ts"],
+  "subscribers": ["server/subscribers/**/*.ts"],
+  "cli": {
+    "entitiesDir": "server/entities",
+    "migrationsDir": "server/migrations",
+    "subscribersDir": "server/subscribers"
+  }
+}
